@@ -1,0 +1,14 @@
+body {
+  margin: 0 auto;
+}
+
+.navbar-brand a {
+  font-family: Red-Hat !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #035755;
+}
+/*# sourceMappingURL=mainstyle.css.map */

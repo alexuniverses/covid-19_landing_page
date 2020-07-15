@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,MAAM;CAAG;;ACDrB,AAAA,aAAa,CAAC,CAAC,CAAC;EACZ,WAAW,EAAE,kBAAkB;EAC/B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,SAAS;EACzB,KAAK,EAAE,OAAO;CAAG",
+    "sources": [
+        "../sass/mainstyle.sass",
+        "../sass/_grid.sass",
+        "../sass/sections/_navbar.sass"
+    ],
+    "names": [],
+    "file": "mainstyle.css"
+}

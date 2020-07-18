@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/map_stat.js"></script>
     <title>Covid-19</title>
 </head>
 
@@ -196,34 +197,11 @@
                         </div>
                         <div class="col-md-4"></div>
                     </div>
-                    <div class="row">
+                    <div class="row map__list_set">
                         <div class="col-md" id="stat">
-                            <script>
-                                var isoRegions = ['USA', 'Italy', 'China', 'Spain', 'Germany', 'Iran'];
-                                for (var region of isoRegions) {
-                                    var settings = {
-                                        "async": true,
-                                        "crossDomain": true,
-                                        "url": `https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=${region}`,
-                                        "method": "GET",
-                                        "headers": {
-                                            "x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
-                                            "x-rapidapi-key": "78c66dfa48msha1562dcaad45840p1bca83jsn54fe4420d517"
-                                        }
-                                    }
-
-                                    $.ajax(settings).done(function (response) {
-                                        document.querySelector('#stat').innerText = response;
-                                        console.log(response);
-                                    });
-                                }
-
-
-                                $.ajax(settings).done(function (response) {
-                                    document.querySelector('#stat').innerText = response;
-                                    console.log(response);
-                                });
-                            </script>
+                            <ul id="stat-list">
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -233,7 +211,7 @@
     <section class="form_set">
         <div class="container">
             <div class="row">
-                <div class="col-md">
+                <div class="col-md-12">
                     <h1>Have Question in mind?<br>Let us help you</h1>
                     <form>
                         <div class="form-group">

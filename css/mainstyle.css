@@ -18,25 +18,27 @@ body {
 }
 
 .info-section {
-  margin-top: 102px;
+  margin-top: 10%;
+  background: url(./../img/bg-photo/bg-cov-icons/info-cov-1.png) no-repeat right bottom;
 }
 
 .card-section {
   margin-top: 7%;
-  background: url(./../img/bg-photo/bg-cov-icons/bg-cov.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
+  background: url(./../img/bg-photo/bg-cov-icons/bg-cov.png) no-repeat left bottom, url(./../img/bg-photo/bg-cov-icons/info-cov-2.png) no-repeat right top;
 }
 
 .symptoms {
+  background: url(./../img/bg-photo/bg-cov-icons/left-leaf.png) no-repeat left bottom 15%, url(./../img/bg-photo/bg-cov-icons/right-leaf.png) no-repeat right bottom;
   margin-top: 14%;
 }
 
 .advices {
+  background: url(./../img/bg-photo/bg-cov-icons/advice-cov.png) no-repeat left top, url(./../img/bg-photo/bg-cov-icons/advice-cov-2.png) no-repeat right bottom 15%, url(./../img/bg-photo/bg-cov-icons/advice-cov-3.png) no-repeat right bottom 3%;
   margin-top: 16%;
 }
 
 .form_set {
+  background: url(./../img/bg-photo/bg-cov-icons/form-cov.png) no-repeat right 12% top, url(./../img/bg-photo/bg-cov-icons/form-cov-2.png) no-repeat right bottom;
   margin-top: 14%;
 }
 
@@ -118,6 +120,25 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .navbar-nav {
+    margin-left: 0;
+  }
+  .nav-item:hover:after {
+    content: url(./../img/icons/nav-dot.png);
+    margin-left: 30%;
+  }
+  .nav-link {
+    margin-left: 30px;
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4B4F51 !important;
+  }
+}
+
+@media screen and (max-width: 1150px) {
   .navbar-nav {
     margin-left: 0;
   }

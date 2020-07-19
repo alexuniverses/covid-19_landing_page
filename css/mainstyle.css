@@ -13,7 +13,7 @@ body {
 
 .header {
   background: url(./../img/bg-photo/header-bg.png);
-  background-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -747,7 +747,6 @@ body {
 }
 
 .map__info_panel_set {
-  width: 50%;
   height: 635px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-79.45%, #FFFBFB), color-stop(105.35%, #FDFDFD));
   background: linear-gradient(360deg, #FFFBFB -79.45%, #FDFDFD 105.35%);
@@ -777,6 +776,21 @@ body {
 
 .map__list_set img {
   margin: 20px 20px auto auto;
+}
+
+.map__list_set li span:first-child {
+  margin-top: 20px;
+  float: left;
+}
+
+.map__list_set li span:last-child {
+  margin-top: 20px;
+  float: right;
+}
+
+.map__list_set li:nth-child(4) span:last-child:after {
+  content: url(./../img/icons/arrow_down.png);
+  margin-top: 20px;
 }
 
 .form_set h1 {

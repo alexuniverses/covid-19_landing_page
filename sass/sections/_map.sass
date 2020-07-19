@@ -1,7 +1,6 @@
 .map
     &__map_side
     &__info_panel_set
-        width: 50%
         height: 635px
         background: linear-gradient(360deg, #FFFBFB -79.45%, #FDFDFD 105.35%)
         box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07)
@@ -23,3 +22,12 @@
         color: #035755
         img
            margin: 20px 20px auto auto
+        li span:first-child
+            margin-top: 20px
+            float: left
+        li span:last-child
+            margin-top: 20px
+            float: right
+        li:nth-child(4) span:last-child:after
+            content: url(./../img/icons/arrow_down.png)
+            margin-top: 20px

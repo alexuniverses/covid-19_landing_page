@@ -13,7 +13,6 @@ body {
 
 .header {
   background: url(./../img/bg-photo/header-bg.png);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -24,6 +23,9 @@ body {
 
 .card-section {
   margin-top: 7%;
+  background: url(./../img/bg-photo/bg-cov-icons/bg-cov.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 .symptoms {
@@ -35,11 +37,11 @@ body {
 }
 
 .form_set {
-  margin-top: 140px;
+  margin-top: 14%;
 }
 
 .footer {
-  margin-top: 143px;
+  margin-top: 14%;
 }
 
 @font-face {
@@ -82,7 +84,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
-  color: #4B4F51 !important;
+  color: #0B5C5A !important;
 }
 
 .nav-link:hover {
@@ -486,6 +488,9 @@ body {
 }
 
 @media screen and (max-width: 766px) {
+  .card-section {
+    margin-top: 15%;
+  }
   .card-section__card_pos__card {
     margin: 0 auto;
     padding-top: 6%;
@@ -595,6 +600,7 @@ body {
 }
 
 .advices__description {
+  margin-top: 10%;
   font-family: Gelion;
   font-style: normal;
   text-transform: capitalize;
@@ -610,7 +616,7 @@ body {
 
 .advices__description #title_masks:before {
   content: "01";
-  margin-right: 40px;
+  margin-right: 35px;
   background: url(./../img/bg-photo/bg-ellipse-sm.png);
   background-repeat: no-repeat;
   padding: 10px 20px 40px 15px;
@@ -624,7 +630,7 @@ body {
 
 .advices__description #title_wash:before {
   content: "02";
-  margin-right: 40px;
+  margin-right: 35px;
   background: url(./../img/bg-photo/bg-ellipse-sm.png);
   background-repeat: no-repeat;
   padding: 10px 20px 40px 9px;
@@ -638,7 +644,7 @@ body {
 
 .advices__description #nose_rag:before {
   content: "03";
-  margin-right: 40px;
+  margin-right: 35px;
   background: url(./../img/bg-photo/bg-ellipse-sm.png);
   background-repeat: no-repeat;
   padding: 10px 20px 40px 9px;
@@ -652,7 +658,7 @@ body {
 
 .advices__description #contact_title:before {
   content: "04";
-  margin-right: 40px;
+  margin-right: 35px;
   background: url(./../img/bg-photo/bg-ellipse-sm.png);
   background-repeat: no-repeat;
   padding: 10px 20px 40px 9px;
@@ -738,7 +744,7 @@ body {
     color: #FA5652;
   }
   .advices__description p {
-    margin-left: 17%;
+    margin-left: 16%;
     font-weight: normal;
     font-size: 12px;
     line-height: 221%;
@@ -746,8 +752,15 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .advices__description {
+    font-family: Gelion;
+    font-style: normal;
+    text-transform: capitalize;
+  }
+}
+
 .map__info_panel_set {
-  height: 635px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-79.45%, #FFFBFB), color-stop(105.35%, #FDFDFD));
   background: linear-gradient(360deg, #FFFBFB -79.45%, #FDFDFD 105.35%);
   -webkit-box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07);
@@ -756,41 +769,181 @@ body {
 }
 
 .map__info_panel_set h1 {
+  margin-top: 40px;
+  margin-left: 30px;
   font-family: Gelion;
   font-style: normal;
   font-weight: bolder;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 58px;
   color: #035755;
+}
+
+.map__panel_btn_group {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map__panel_btn_group button {
+  width: 48px;
+  height: 48px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.map__panel_btn_group button img {
+  margin: auto;
 }
 
 .map__list_set {
   list-style: none;
   font-family: Gelion;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   color: #035755;
 }
 
+.map__list_set li {
+  font-family: Gelion;
+  font-style: normal;
+}
+
 .map__list_set img {
-  margin: 20px 20px auto auto;
+  margin: 15px 20px auto 30px;
 }
 
 .map__list_set li span:first-child {
   margin-top: 20px;
+  margin-left: 10%;
   float: left;
 }
 
 .map__list_set li span:last-child {
   margin-top: 20px;
+  margin-right: 10%;
   float: right;
+}
+
+.map__list_set li:nth-child(1) span:last-child:after {
+  content: url(./../img/icons/arrow_up.png);
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.map__list_set li:nth-child(2) span:last-child:after {
+  content: url(./../img/icons/arrow_down.png);
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.map__list_set li:nth-child(3) span:last-child:after {
+  content: url(./../img/icons/arrow_down.png);
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .map__list_set li:nth-child(4) span:last-child:after {
   content: url(./../img/icons/arrow_down.png);
   margin-top: 20px;
+  margin-left: 10px;
+}
+
+.map__list_set li:nth-child(5) span:last-child:after {
+  content: url(./../img/icons/arrow_up.png);
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.map__list_set li:nth-child(6) span:last-child:after {
+  content: url(./../img/icons/arrow_down.png);
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .map__list_set {
+    list-style: none;
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100%;
+    line-height: 29px;
+    color: #035755;
+    font-family: Gelion;
+    font-style: normal;
+  }
+  .map img {
+    margin: 15px 5px auto 5px;
+  }
+  .map li span:first-child {
+    margin-top: 20px;
+    margin-left: 1%;
+    float: left;
+  }
+  .map li span:last-child {
+    margin-top: 20px;
+    margin-right: 1%;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map__list_set {
+    list-style: none;
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #035755;
+    margin: 15px 20px auto 30px;
+  }
+  .map__list_set li {
+    font-family: Gelion;
+    font-style: normal;
+  }
+  .map__list_set li span:first-child {
+    margin-top: 20px;
+    margin-left: 10%;
+    float: left;
+  }
+  .map__list_set li span:last-child {
+    margin-top: 20px;
+    margin-right: 10%;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .map__list_set {
+    list-style: none;
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #035755;
+    margin: 15px 20px auto 2px;
+  }
+  .map__list_set li {
+    font-family: Gelion;
+    font-style: normal;
+  }
+  .map__list_set li span:first-child {
+    margin-top: 20px;
+    margin-left: 0%;
+    float: left;
+  }
+  .map__list_set li span:last-child {
+    margin-top: 20px;
+    margin-right: 0%;
+    float: right;
+  }
 }
 
 .form_set h1 {

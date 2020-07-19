@@ -1,33 +1,141 @@
 .map
     &__map_side
     &__info_panel_set
-        height: 635px
         background: linear-gradient(360deg, #FFFBFB -79.45%, #FDFDFD 105.35%)
         box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07)
         border-radius: 0px
         h1
+            margin-top: 40px
+            margin-left: 30px
             font-family: Gelion
             font-style: normal
             font-weight: bolder
-            font-size: 48px
+            font-size: 40px
             line-height: 58px
             color: #035755
+    &__panel_btn_group
+        margin-top: 45px
+        display: flex
+        button
+            width: 48px
+            height: 48px
+            display: inline-flex
+            img
+                margin: auto
     &__list_set
         list-style: none
         font-family: Gelion
         font-style: normal
-        font-weight: 500
+        font-weight: bold
         font-size: 24px
         line-height: 29px
         color: #035755
+        li
+            font-family: Gelion
+            font-style: normal
         img
-           margin: 20px 20px auto auto
+           margin: 15px 20px auto 30px
         li span:first-child
             margin-top: 20px
+            margin-left: 10%
             float: left
         li span:last-child
             margin-top: 20px
+            margin-right: 10%
             float: right
+        li:nth-child(1) span:last-child:after
+            content: url(./../img/icons/arrow_up.png)
+            margin-top: 20px
+            margin-left: 10px
+        li:nth-child(2) span:last-child:after
+            content: url(./../img/icons/arrow_down.png)
+            margin-top: 20px
+            margin-left: 10px
+        li:nth-child(3) span:last-child:after
+            content: url(./../img/icons/arrow_down.png)
+            margin-top: 20px
+            margin-left: 10px
         li:nth-child(4) span:last-child:after
             content: url(./../img/icons/arrow_down.png)
             margin-top: 20px
+            margin-left: 10px
+        li:nth-child(5) span:last-child:after
+            content: url(./../img/icons/arrow_up.png)
+            margin-top: 20px
+            margin-left: 10px
+        li:nth-child(6) span:last-child:after
+            content: url(./../img/icons/arrow_down.png)
+            margin-top: 20px
+            margin-left: 10px
+@media screen and ( max-width: 1150px )
+    .map
+        &__list_set
+            list-style: none
+            font-family: Gelion
+            font-style: normal
+            font-weight: bold
+            font-size: 100%
+            line-height: 29px
+            color: #035755
+            li
+            font-family: Gelion
+            font-style: normal
+        img
+           margin: 15px 5px auto 5px
+        li span:first-child
+            margin-top: 20px
+            margin-left: 1%
+            float: left
+        li span:last-child
+            margin-top: 20px
+            margin-right: 1%
+            float: right
+@media screen and ( max-width: 768px )
+    .map
+        &__list_set
+            list-style: none
+            font-family: Gelion
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 29px
+            color: #035755
+            li
+                font-family: Gelion
+                font-style: normal
+            img
+            margin: 15px 20px auto 30px
+            li span:first-child
+                margin-top: 20px
+                margin-left: 10%
+                float: left
+            li span:last-child
+                margin-top: 20px
+                margin-right: 10%
+                float: right
+@media screen and ( max-width: 450px )
+    .map
+        &__list_set
+            list-style: none
+            font-family: Gelion
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 29px
+            color: #035755
+            li
+                font-family: Gelion
+                font-style: normal
+            img
+            margin: 15px 20px auto 2px
+            li span:first-child
+                margin-top: 20px
+                margin-left: 0%
+                float: left
+            li span:last-child
+                margin-top: 20px
+                margin-right: 0%
+                float: right
+    
+    
+            
